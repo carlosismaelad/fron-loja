@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    height: 100vh;
+    font-size: 1.2rem;
+    background-color: #d7e1e7;
+}

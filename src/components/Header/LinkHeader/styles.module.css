@@ -1,0 +1,15 @@
+.wrapper {
+    color: #fff;
+    font-weight: 700;
+    padding: 0.625rem;
+    position: relative;
+    bottom: 0;
+    text-decoration: none;
+    transition: 1s;
+    width: 10rem;
+}
+.wrapper:hover,
+.wrapper a.active {
+    color: #f7f742;
+    border-bottom: 1px solid #f7f742;
+}
