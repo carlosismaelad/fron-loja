@@ -1,5 +1,5 @@
 .wrapper {
-    color: #fff;
+    color: #ae62c5;
     font-weight: 700;
     padding: 0.625rem;
     position: relative;
@@ -10,6 +10,6 @@
 }
 .wrapper:hover,
 .wrapper a.active {
-    color: #f7f742;
-    border-bottom: 1px solid #f7f742;
+    color: #c205fc;
+    border-bottom: 1px solid #c205fc;
 }

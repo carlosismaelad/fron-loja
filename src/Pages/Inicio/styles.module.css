@@ -1,0 +1,30 @@
+.inicioSection {
+    margin: 3rem 0 0 2rem;
+    display: flex;
+    padding: 0.75rem;
+    font-size: 3rem;
+}
+
+.apresentacao {
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+span {
+    background: linear-gradient(to right, #a200ff, #0052cc);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 200% 100%;
+    animation: gradient-animation 3s infinite;
+}
+
+h3 {
+    margin-bottom: 0.7rem;
+}
+
+p {
+    width: 50rem;
+    background-color: #9da7ad;
+    border-radius: 0.75rem;
+    padding: 1rem;
+}

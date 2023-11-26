@@ -9,7 +9,7 @@ export default function Header(){
                 <img src="Logo" alt="logo" />
             </div>
             <div className={styles.linksHeader}>
-                <LinkHeader to="/" text="Catálogo"/>
+                <LinkHeader to="/" text="Início"/>
                 <LinkHeader to="/contatos" text="Contatos" />
                 <LinkHeader to="/sobrenos" text="Sobre nós"/>
             </div>            
