@@ -1,11 +1,16 @@
 .header {
     background-color: #ffffff;
-    height: 5rem;
+    height: 6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 2rem;
     border-bottom: 1px solid black;
+}
+
+.imageHeader {
+    width: 5rem;
+    border-radius: 50%;
 }
 
 .linksHeader {
