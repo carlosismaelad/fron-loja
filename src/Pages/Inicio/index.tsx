@@ -1,12 +1,6 @@
+import ImageSlides from '../../components/ImageSlides/ImageSlides'
 import styles from './styles.module.css'
 import { TypeAnimation } from 'react-type-animation'
-import image1 from "../../assets/image1.jpeg"
-import image2 from "../../assets/image2.jpeg"
-
-import {Swiper, SwiperSlide} from "swiper/react"
-
-
-const images = [image1, image2]
 
 const games = [
     {
@@ -116,61 +110,49 @@ export default function Inicio(){
       <section className={styles.inicioSection}>
                 
         <div className={styles.title}>
-            <h2>Bem vindo à Binha Acessórios!</h2>
-            <div>
-              <h2 >
-                <TypeAnimation
-                          sequence={[
-                              " Pulseiras.", 
-                              1000,
-                              " Colares.",
-                              1000,
-                              " Chaveiros.",
-                              1000,
-                              " Puxadores.",
-                              1000,
-                              " Canetas personalizadas.",
-                              1000,
-                              " E muito mais!",
-                              1000
-                            ]}
-                            wrapper="span"
-                            speed={50}
-                            repeat={Infinity}
-                      />                        
-              </h2>
-            </div>
-          <Swiper
-            slidesPerView={1}
-            pagination={{clickable: true}}
-            navigation          
-          >
-           {images.map( item => (
-            <SwiperSlide key={item}>
-              <img
-                className={styles.slideItem}
-                src={item} 
-                alt="Slider" />                           
-            </SwiperSlide>
-           ))}
-          </Swiper>
-                        
+
+          <h2>Bem vindo à Binha Acessórios!</h2>
+          <div>
+            <h2 >
+              <TypeAnimation
+                        sequence={[
+                            " Pulseiras.", 
+                            1000,
+                            " Colares.",
+                            1000,
+                            " Chaveiros.",
+                            1000,
+                            " Puxadores.",
+                            1000,
+                            " Canetas personalizadas.",
+                            1000,
+                            " E muito mais!",
+                            1000
+                          ]}
+                          wrapper="span"
+                          speed={50}
+                          repeat={Infinity}
+                    />                        
+            </h2>
+          </div>                                
         </div>
+        <ImageSlides/>
         <div>
-            <div className={styles.cardProdutos}>
-                {games.map((game) => (
-                    <div key={game.id}>
-                        <img
-                            className={styles.cardImage} 
-                            src={game.coverImage} 
-                            alt="" 
-                        />
-                        <h2>{game.title}</h2>
-                        <p>{game.description}</p>
-                        <p>{precoFormatado(game.preco)}</p>
-                    </div>
-                ))}
-            </div>
+          <div className={styles.cardProdutos}>
+            {games.map((game) => (
+              <div key={game.id}>
+                <img
+                    className={styles.cardImage} 
+                    src={game.coverImage} 
+                    alt="" 
+                />
+                <h2>{game.title}</h2>
+                <p>{game.description}</p>
+                <p>{precoFormatado(game.preco)}</p>
+              </div>
+            ))}
+                
+          </div>
         </div>
       </section>
   )
